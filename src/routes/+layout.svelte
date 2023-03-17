@@ -1,6 +1,7 @@
 <script>
   import "../tailwind.css";
   import Fa from "svelte-fa";
+  import PocketBase from "pocketbase";
   import {
     faRightFromBracket,
     faList,
@@ -15,7 +16,8 @@
     faInstagram,
     faMastodon,
   } from "@fortawesome/free-brands-svg-icons";
-  import { init, isLoggedIn } from "../stores/user";
+
+  import { init, change, isLoggedIn } from "../stores/user";
   import { onMount } from "svelte";
 
   onMount(() => {
@@ -68,19 +70,19 @@
     <div class="grid grid-cols-6">
       <div class="col-span-6 md:col-span-2">
         <h5 class="font-bold text-lg">Karriere:</h5>
-        <ul class="list list-disc">
+        <ul class="list list-disc space-y-2">
           <li class="list-item ml-3">Webentwickler</li>
           <li class="list-item ml-3">Wordpress Entwickler</li>
         </ul>
 
         <h5 class="font-bold text-lg mt-5">Projekte:</h5>
-        <ul class="list list-disc">
+        <ul class="list list-disc space-y-2">
           <li class="list-item ml-3">Stewe Gruppe Webseite</li>
         </ul>
       </div>
       <div class="col-span-6 md:col-span-2">
         <h5 class="font-bold text-lg">Firma:</h5>
-        <ul class="list list-disc">
+        <ul class="list list-disc space-y-2">
           <li class="list item ml-3">
             <a
               href="https://www.stewe.de"
@@ -126,17 +128,17 @@
           <Fa icon={faMastodon} size="2x" />
           <Fa icon={faYoutube} size="2x" />
         </section>
-      </div>
-      <div class="col-span-6 mt-5">
-        <hr />
-      </div>
-    </div>
-    <div class="grid grid-cols-6 mt-5 text-center">
-      <div class="col-span-6 md:col-span-2">Impressum & Datenschutz</div>
-      <div class="col-span-6 md:col-span-2">Kontakt</div>
-      <div class="col-span-6 md:col-span-2 flex justify-center">
-        <Fa icon={faCopyright} class="mx-2 mt-1" />
-        <span>by Stewe Digital</span>
+        <section class="datenschutz flex justify-center mt-5">
+          <a href="/impressum" class="mr-2">Impressum</a> &
+          <a href="/data-privacy" class="ml-2">Datenschutz</a>
+        </section>
+        <section class="datenschutz flex justify-center mt-2">
+          <a href="/kontakt">Kontaktiere uns Jetzt</a>
+        </section>
+        <section class="copyright flex justify-center mt-2">
+          <Fa icon={faCopyright} class="mx-2 mt-1" />
+          <span>by Stewe Digital</span>
+        </section>
       </div>
     </div>
   </footer>
