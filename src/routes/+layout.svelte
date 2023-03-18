@@ -1,7 +1,6 @@
 <script>
   import "../tailwind.css";
   import Fa from "svelte-fa";
-  import PocketBase from "pocketbase";
   import {
     faRightFromBracket,
     faList,
@@ -17,7 +16,7 @@
     faMastodon,
   } from "@fortawesome/free-brands-svg-icons";
 
-  import { init, change, isLoggedIn } from "../stores/user";
+  import { init, isLoggedIn } from "../stores/user";
   import { onMount } from "svelte";
 
   onMount(() => {

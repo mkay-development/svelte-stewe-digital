@@ -2,7 +2,6 @@
   import { goto } from "$app/navigation";
   import PocketBase from "pocketbase";
   import { url } from "../../stores/backend";
-  import { change } from "../../stores/user";
 
   let email = "";
   let password = "";
@@ -10,12 +9,11 @@
   const login = async function () {
     const pb = new PocketBase($url);
 
-    const authData = await pb
+    await pb
       .collection("users")
       .authWithPassword(email, password);
     if (pb.authStore.isValid) {
       goto("/dashboard");
-      change();
       window.location = "/dashboard";
     }
   };

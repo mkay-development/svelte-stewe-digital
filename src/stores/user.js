@@ -1,7 +1,5 @@
 import { browser } from "$app/environment";
 import { writable } from "svelte/store";
-import PocketBase from 'pocketbase';
-import { url } from "./backend";
 
 export let token = writable('');
 export let authData = writable({});
@@ -15,10 +13,6 @@ export const init = function () {
         token.set(data.token);
         isLoggedIn.set(true);
     }
-}
-
-export const change = function () {
-    
 }
 
 token.subscribe(value => {
