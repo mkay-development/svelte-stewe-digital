@@ -7,11 +7,13 @@
   export let identifier;
 
   let item = {};
+  let loading = true;
 
   const load = async function () {
     const pb = new PocketBase($url);
     const result = await pb.collection("stellen").getOne(identifier);
     item = result;
+    loading = false;
   };
 
   onMount(() => {
@@ -21,7 +23,7 @@
   });
 </script>
 
-{#if item}
+{#if !loading}
   <section class="col-span-6 md:col-span-2 card bg-white px-2 py-2 rounded-lg">
     <img
       src="https://via.placeholder.com/480x320.png?text=Stewe+Digital"
