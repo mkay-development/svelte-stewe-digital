@@ -79,7 +79,6 @@
           <li class="list-item ml-3">Stewe Gruppe Webseite</li>
           <li class="list-item ml-3">Stewe Digital Webseite</li>
         </ul>
-        
       </div>
       <div class="col-span-6 md:col-span-2">
         <h5 class="font-bold text-lg">Firma:</h5>
