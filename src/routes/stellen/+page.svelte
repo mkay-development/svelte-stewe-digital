@@ -15,6 +15,7 @@
   });
 </script>
 
+<h2 class="font-bold text-lg mb-3">Offene Stellen:</h2>
 <div class="grid grid-cols-6 gap-3">
   {#each items as item}
     <ProfileCard identifier={item.id} />
