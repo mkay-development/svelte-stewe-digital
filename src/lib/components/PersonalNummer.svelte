@@ -5,11 +5,13 @@
   import { url } from "../../stores/backend";
 
   let beruf = {};
+  let loading = true;
 
   const load = async function () {
     const pb = new PocketBase($url);
-
     beruf = await pb.collection("users").getOne(identifier);
+
+    loading = false;
   };
 
   onMount(() => {
@@ -19,4 +21,6 @@
   });
 </script>
 
-<span class="username">{beruf.nummer}</span>
+{#if !loading}
+  <span class="username">{beruf.nummer}</span>
+{/if}
