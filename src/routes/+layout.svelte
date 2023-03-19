@@ -5,9 +5,11 @@
     faRightFromBracket,
     faList,
     faUser,
+    faTimes,
     faCopyright,
     faAddressCard,
     faClipboard,
+    faBars,
   } from "@fortawesome/free-solid-svg-icons";
   import {
     faFacebook,
@@ -18,6 +20,8 @@
 
   import { init, isLoggedIn } from "../stores/user";
   import { onMount } from "svelte";
+  import NavigationContent from "$lib/components/NavigationContent.svelte";
+  import { toggle, open } from "../stores/navigation";
 
   onMount(() => {
     init();
@@ -27,7 +31,18 @@
 <section class="bg-[#1154A6]">
   <header class="mx-auto max-w-5xl mb-2 flex justify-between px-2 py-5">
     <h1 class="text-xl font-bold text-white"><a href="/">Stewe.digital</a></h1>
-    <nav class="">
+    <nav class="mobile md:hidden">
+      {#if $open}
+        <button on:click={toggle}>
+          <Fa icon={faTimes} class="mt-2 text-white" size="1.5x" /></button
+        >
+      {:else}
+        <button on:click={toggle}>
+          <Fa icon={faBars} class="mt-2 text-white" size="1.5x" /></button
+        >
+      {/if}
+    </nav>
+    <nav class="desktop hidden md:block">
       <ul class="flex space-x-5 text-white">
         {#if !$isLoggedIn}
           <li>
@@ -47,7 +62,7 @@
             >
           </li>
           <li>
-            <a href="/user/profile" title="Login"
+            <a href="/user/profile" title="Profile"
               ><Fa icon={faAddressCard} size="1.5x" /></a
             >
           </li>
@@ -61,6 +76,8 @@
     </nav>
   </header>
 </section>
+
+<NavigationContent />
 
 <main class="mx-auto max-w-5xl my-2 px-2 py-2 min-h-screen"><slot /></main>
 
