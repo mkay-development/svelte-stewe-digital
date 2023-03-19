@@ -1,4 +1,5 @@
 <script>
+  import { page } from "$app/stores";
   import "../tailwind.css";
   import Fa from "svelte-fa";
   import {
@@ -26,6 +27,8 @@
   onMount(() => {
     init();
   });
+
+  $: $page: open.set(false);
 </script>
 
 <section class="bg-[#1154A6]">
