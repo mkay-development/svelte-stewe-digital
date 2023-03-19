@@ -1,11 +1,11 @@
-name: Deployment - Develop
+name: Deployment - Stage
 on:
   push:
     branches:
-      - develop
+      - stage
 jobs:
   build:
-    name: Build - Develop
+    name: Build - Stage
     runs-on: ubuntu-latest
     steps:
     - name: executing remote ssh commands using key
