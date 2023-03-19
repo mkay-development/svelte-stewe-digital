@@ -24,10 +24,12 @@
   </div>
   <div class="col-span-6 md:col-span-2">
     <section class="card bg-white px-2 py-2 rounded-lg">
-      <img
-        src="https://via.placeholder.com/480x320.png?text=Stewe+Digital"
-        alt=""
-      />
+      <a href="/dashboard">
+        <img
+          src="https://via.placeholder.com/480x320.png?text=Stewe+Digital"
+          alt=""
+        /></a
+      >
       <h2 class="font-bold mt-2 px-2 py-2 text-center">Mitarbeiter</h2>
       <p class="text-sm px-2 text-center">
         Profile unserer Mitarbeiter mit ihrem Beruf, ehemaligen Stellen und
