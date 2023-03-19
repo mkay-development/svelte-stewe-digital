@@ -1,3 +1,7 @@
+<svelte:head>
+  <title>Login - Stewe Digital</title>
+</svelte:head>
+
 <script>
   import { goto } from "$app/navigation";
   import PocketBase from "pocketbase";

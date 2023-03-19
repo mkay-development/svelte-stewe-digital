@@ -21,3 +21,7 @@
     <ProfileCard identifier={item.id} />
   {/each}
 </div>
+
+<svelte:head>
+  <title>Stellen - Stewe Digital</title>
+</svelte:head>

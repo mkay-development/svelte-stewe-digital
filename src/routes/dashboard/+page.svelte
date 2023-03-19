@@ -19,3 +19,7 @@
     <UserCard identifier={item.id} />
   {/each}
 </div>
+
+<svelte:head>
+  <title>Dashboard - Stewe Digital</title>
+</svelte:head>

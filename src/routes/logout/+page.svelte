@@ -17,3 +17,7 @@
     action();
   });
 </script>
+
+<svelte:head>
+  <title>Logout - Stewe Digital</title>
+</svelte:head>

@@ -1,3 +1,7 @@
+<svelte:head>
+  <title>Impressum - Stewe Digital</title>
+</svelte:head>
+
 <div class="grid grid-cols-6 gap-2">
   <div class="col-span-6">
     <h2><strong>Angaben gemäß § 5 TMG</strong></h2>

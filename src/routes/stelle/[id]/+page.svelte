@@ -17,6 +17,10 @@
   });
 </script>
 
+<svelte:head>
+  <title>Stelle - Stewe Digital</title>
+</svelte:head>
+
 <div class="grid grid-cols-6 gap-3">
   <div class="col-span-6 md:col-span-2">
     <section class="dates text-center block font-bold mb-3">
