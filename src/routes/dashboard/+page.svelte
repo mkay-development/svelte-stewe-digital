@@ -1,16 +1,9 @@
 <script>
   import { onMount } from "svelte";
-  import PocketBase from "pocketbase";
   import UserCard from "$lib/components/UserCard.svelte";
-  import { url } from "../../stores/backend";
+  export let data;
 
-  let items = [];
-
-  onMount(async function () {
-    const pb = new PocketBase($url);
-    const resultList = await pb.collection("users").getList(0,50);
-    items = resultList.items;
-  });
+  let {items} = data;
 </script>
 
 <h2 class="font-bold text-lg mb-3">Unser Team:</h2>
