@@ -17,7 +17,7 @@
   onMount(() => {
     setTimeout(function () {
       load();
-    }, 2500);
+    }, 1000);
   });
 </script>
 
