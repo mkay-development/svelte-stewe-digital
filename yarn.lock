@@ -1162,13 +1162,15 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@playwright/test@^1.28.1":
-  version "1.30.0"
-  resolved "https://registry.npmjs.org/@playwright/test/-/test-1.30.0.tgz"
-  integrity sha512-SVxkQw1xvn/Wk/EvBnqWIq6NLo1AppwbYOjNLmyU0R1RoQ3rLEBtmjTnElcnz8VEtn11fptj1ECxK0tgURhajw==
+"@playwright/test@^1.31.2":
+  version "1.31.2"
+  resolved "https://registry.yarnpkg.com/@playwright/test/-/test-1.31.2.tgz#426d8545143a97a6fed250a2a27aa1c8e5e2548e"
+  integrity sha512-BYVutxDI4JeZKV1+ups6dt5WiqKhjBtIYowyZIJ3kBDmJgsuPKsqqKNIMFbUePLSCmp2cZu+BDL427RcNKTRYw==
   dependencies:
     "@types/node" "*"
-    playwright-core "1.30.0"
+    playwright-core "1.31.2"
+  optionalDependencies:
+    fsevents "2.3.2"
 
 "@polka/url@^1.0.0-next.20":
   version "1.0.0-next.21"
@@ -1345,23 +1347,15 @@
     semver "^7.3.7"
     tsutils "^3.21.0"
 
-"@typescript-eslint/parser@^5.50.0":
-  version "5.50.0"
-  resolved "https://registry.npmjs.org/@typescript-eslint/parser/-/parser-5.50.0.tgz"
-  integrity sha512-KCcSyNaogUDftK2G9RXfQyOCt51uB5yqC6pkUYqhYh8Kgt+DwR5M0EwEAxGPy/+DH6hnmKeGsNhiZRQxjH71uQ==
+"@typescript-eslint/parser@^5.55.0":
+  version "5.55.0"
+  resolved "https://registry.yarnpkg.com/@typescript-eslint/parser/-/parser-5.55.0.tgz#8c96a0b6529708ace1dcfa60f5e6aec0f5ed2262"
+  integrity sha512-ppvmeF7hvdhUUZWSd2EEWfzcFkjJzgNQzVST22nzg958CR+sphy8A6K7LXQZd6V75m1VKjp+J4g/PCEfSCmzhw==
   dependencies:
-    "@typescript-eslint/scope-manager" "5.50.0"
-    "@typescript-eslint/types" "5.50.0"
-    "@typescript-eslint/typescript-estree" "5.50.0"
+    "@typescript-eslint/scope-manager" "5.55.0"
+    "@typescript-eslint/types" "5.55.0"
+    "@typescript-eslint/typescript-estree" "5.55.0"
     debug "^4.3.4"
-
-"@typescript-eslint/scope-manager@5.50.0":
-  version "5.50.0"
-  resolved "https://registry.npmjs.org/@typescript-eslint/scope-manager/-/scope-manager-5.50.0.tgz"
-  integrity sha512-rt03kaX+iZrhssaT974BCmoUikYtZI24Vp/kwTSy841XhiYShlqoshRFDvN1FKKvU2S3gK+kcBW1EA7kNUrogg==
-  dependencies:
-    "@typescript-eslint/types" "5.50.0"
-    "@typescript-eslint/visitor-keys" "5.50.0"
 
 "@typescript-eslint/scope-manager@5.55.0":
   version "5.55.0"
@@ -1381,28 +1375,10 @@
     debug "^4.3.4"
     tsutils "^3.21.0"
 
-"@typescript-eslint/types@5.50.0":
-  version "5.50.0"
-  resolved "https://registry.npmjs.org/@typescript-eslint/types/-/types-5.50.0.tgz"
-  integrity sha512-atruOuJpir4OtyNdKahiHZobPKFvZnBnfDiyEaBf6d9vy9visE7gDjlmhl+y29uxZ2ZDgvXijcungGFjGGex7w==
-
 "@typescript-eslint/types@5.55.0":
   version "5.55.0"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/types/-/types-5.55.0.tgz#9830f8d3bcbecf59d12f821e5bc6960baaed41fd"
   integrity sha512-M4iRh4AG1ChrOL6Y+mETEKGeDnT7Sparn6fhZ5LtVJF1909D5O4uqK+C5NPbLmpfZ0XIIxCdwzKiijpZUOvOug==
-
-"@typescript-eslint/typescript-estree@5.50.0":
-  version "5.50.0"
-  resolved "https://registry.npmjs.org/@typescript-eslint/typescript-estree/-/typescript-estree-5.50.0.tgz"
-  integrity sha512-Gq4zapso+OtIZlv8YNAStFtT6d05zyVCK7Fx3h5inlLBx2hWuc/0465C2mg/EQDDU2LKe52+/jN4f0g9bd+kow==
-  dependencies:
-    "@typescript-eslint/types" "5.50.0"
-    "@typescript-eslint/visitor-keys" "5.50.0"
-    debug "^4.3.4"
-    globby "^11.1.0"
-    is-glob "^4.0.3"
-    semver "^7.3.7"
-    tsutils "^3.21.0"
 
 "@typescript-eslint/typescript-estree@5.55.0":
   version "5.55.0"
@@ -1430,14 +1406,6 @@
     "@typescript-eslint/typescript-estree" "5.55.0"
     eslint-scope "^5.1.1"
     semver "^7.3.7"
-
-"@typescript-eslint/visitor-keys@5.50.0":
-  version "5.50.0"
-  resolved "https://registry.npmjs.org/@typescript-eslint/visitor-keys/-/visitor-keys-5.50.0.tgz"
-  integrity sha512-cdMeD9HGu6EXIeGOh2yVW6oGf9wq8asBgZx7nsR/D36gTfQ0odE5kcRYe5M81vjEFAcPeugXrHg78Imu55F6gg==
-  dependencies:
-    "@typescript-eslint/types" "5.50.0"
-    eslint-visitor-keys "^3.3.0"
 
 "@typescript-eslint/visitor-keys@5.55.0":
   version "5.55.0"
@@ -2469,7 +2437,7 @@ fs.realpath@^1.0.0:
   resolved "https://registry.npmjs.org/fs.realpath/-/fs.realpath-1.0.0.tgz"
   integrity sha512-OO0pH2lK6a0hZnAdau5ItzHPI6pUlvI7jMVnxUQRtw4owF2wk8lOSabtGDCTP4Ggrg2MbGnWO9X8K1t4+fGMDw==
 
-fsevents@~2.3.2:
+fsevents@2.3.2, fsevents@~2.3.2:
   version "2.3.2"
   resolved "https://registry.yarnpkg.com/fsevents/-/fsevents-2.3.2.tgz#8a526f78b8fdf4623b709e0b975c52c24c02fd1a"
   integrity sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==
@@ -3603,10 +3571,10 @@ pify@^2.3.0:
   resolved "https://registry.npmjs.org/pify/-/pify-2.3.0.tgz"
   integrity sha512-udgsAY+fTnvv7kI7aaxbqwWNb0AHiB0qBO89PZKPkoTmGOgdbrHDKD+0B2X4uTfJ/FT1R09r9gTsjUjNJotuog==
 
-playwright-core@1.30.0:
-  version "1.30.0"
-  resolved "https://registry.npmjs.org/playwright-core/-/playwright-core-1.30.0.tgz"
-  integrity sha512-7AnRmTCf+GVYhHbLJsGUtskWTE33SwMZkybJ0v6rqR1boxq2x36U7p1vDRV7HO2IwTZgmycracLxPEJI49wu4g==
+playwright-core@1.31.2:
+  version "1.31.2"
+  resolved "https://registry.yarnpkg.com/playwright-core/-/playwright-core-1.31.2.tgz#debf4b215d14cb619adb7e511c164d068075b2ed"
+  integrity sha512-a1dFgCNQw4vCsG7bnojZjDnPewZcw7tZUNFN0ZkcLYKj+mPmXvg4MpaaKZ5SgqPsOmqIf2YsVRkgqiRDxD+fDQ==
 
 pngjs@^5.0.0:
   version "5.0.0"
@@ -4278,10 +4246,10 @@ supports-preserve-symlinks-flag@^1.0.0:
   resolved "https://registry.npmjs.org/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz"
   integrity sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==
 
-svelte-check@^3.0.2:
-  version "3.0.3"
-  resolved "https://registry.npmjs.org/svelte-check/-/svelte-check-3.0.3.tgz"
-  integrity sha512-ByBFXo3bfHRGIsYEasHkdMhLkNleVfszX/Ns1oip58tPJlKdo5Ssr8kgVIuo5oq00hss8AIcdesuy0Xt0BcTvg==
+svelte-check@^3.1.4:
+  version "3.1.4"
+  resolved "https://registry.yarnpkg.com/svelte-check/-/svelte-check-3.1.4.tgz#79481ee89dce0a6251153696f85a66699ef556fd"
+  integrity sha512-25Lb46ZS4IK/XpBMe4IBMrtYf23V8alqBX+szXoccb7uM0D2Wqq5rMRzYBONZnFVuU1bQG3R50lyIT5eRewv2g==
   dependencies:
     "@jridgewell/trace-mapping" "^0.3.17"
     chokidar "^3.4.1"

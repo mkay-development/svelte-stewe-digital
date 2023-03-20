@@ -1,0 +1,17 @@
+name: Deployment - Stage
+on:
+  push:
+    branches:
+      - stage
+jobs:
+  build:
+    name: Build - Stage
+    runs-on: ubuntu-latest
+    steps:
+    - name: executing remote ssh commands using key
+      uses: appleboy/ssh-action@v0.1.7
+      with:
+        host: 91.107.235.64
+        username: root
+        key: ${{ secrets.KEY }}
+        script: cd /mnt/frontend-3/stage.stewe.mkay.dev && git checkout stage && git pull && yarn  && yarn build
