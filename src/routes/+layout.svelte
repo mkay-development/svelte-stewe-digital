@@ -64,7 +64,7 @@
 
 <main class="mx-auto max-w-5xl my-2 px-2 py-2 min-h-screen"><slot /></main>
 
-<section class="bg-[#1154A6] relative bottom-0 left-0 right-0 py-12">
+<section class="bg-[#1154A6] relative bottom-0 left-0 right-0 md:py-12">
   <footer class="mx-auto max-w-5xl mt-2 px-2 py-5 text-white">
     <div class="grid grid-cols-6">
       <div class="col-span-6 md:col-span-2">
@@ -80,7 +80,7 @@
           <li class="list-item ml-3">Stewe Digital Webseite</li>
         </ul>
       </div>
-      <div class="col-span-6 md:col-span-2">
+      <div class="col-span-6 md:col-span-2 mb-9 md:mb-0">
         <h5 class="font-bold text-lg">Firma:</h5>
         <ul class="list list-disc space-y-2">
           <li class="list item ml-3">

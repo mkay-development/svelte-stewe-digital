@@ -55,10 +55,8 @@
         />
       {/if}
       <p class="text-sm text-center mt-3">
-        <span class="font-bold">Personalnummer:</span>
-        <PersonalNummer identifier={user.id} /> <br />
-        <span class="font-bold">Beruf:</span>
-        <BerufName identifier={user.job} />
+        <PersonalNummer label="Personalnummer" identifier={user.id} /> <br />
+        <BerufName label="Beruf" identifier={user.job} />
       </p>
       <img src={image} alt="" class="mx-auto mt-5" />
     </div>
