@@ -31,7 +31,7 @@
     <img
       src="https://via.placeholder.com/480x320.png?text=Stewe+Digital"
       alt=""
-    /> <section class="beruf block text-center font-bold mt-3"><BerufName identifier={item.beruf} /></section>
+    /> <section class="beruf block text-center font-bold mt-3"><BerufName label="" identifier={item.beruf} /></section>
   </div>
   <div class="col-span-6 md:col-span-4">{@html item.desc}</div>
 </div>

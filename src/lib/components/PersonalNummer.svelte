@@ -1,8 +1,9 @@
-<script>
+<script lang="ts">
   export let identifier;
   import PocketBase from "pocketbase";
   import { onMount } from "svelte";
   import { url } from "../../stores/backend";
+  export let label : string;
 
   let beruf = {};
   let loading = true;
@@ -22,5 +23,6 @@
 </script>
 
 {#if !loading}
+<span class="label font-bold">{label}:</span>
   <span class="username">{beruf.nummer}</span>
 {/if}
