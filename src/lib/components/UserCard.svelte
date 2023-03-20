@@ -32,8 +32,7 @@ let loading = true;
     <h2 class="text-center mt-3 mb-3 font-bold">{user.name}</h2>
     <section class="text-center">
       {#if user.job}
-        <span class="font-bold">Beruf:</span>
-        <BerufName identifier={user.job} />
+        <BerufName label="Beruf" identifier={user.job} />
       {/if}
     </section>
   </div>
