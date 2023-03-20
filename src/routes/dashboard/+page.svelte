@@ -1,15 +1,15 @@
 <script>
-  import { onMount } from "svelte";
   import PocketBase from "pocketbase";
   import UserCard from "$lib/components/UserCard.svelte";
+  import { onMount } from "svelte";
   import { url } from "../../stores/backend";
 
   let items = [];
 
-  onMount(async function () {
+  onMount(async () => {
     const pb = new PocketBase($url);
-    const resultList = await pb.collection("users").getList(0,50);
-    items = resultList.items;
+    const result = await pb.collection("users").getList(1, 50);
+    items = result.items;
   });
 </script>
 
