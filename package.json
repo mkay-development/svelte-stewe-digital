@@ -30,7 +30,7 @@
 	"type": "module",
 	"dependencies": {
 		"@fortawesome/free-brands-svg-icons": "^6.3",
-		"@fortawesome/free-solid-svg-icons": "^6.3",
+		"@fortawesome/free-solid-svg-icons": "^6.4",
 		"@sveltejs/adapter-static": "^2.0",
 		"pocketbase": "^0.12.1",
 		"qrcode": "^1.5.1",
