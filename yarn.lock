@@ -3582,10 +3582,10 @@ pngjs@^5.0.0:
   resolved "https://registry.npmjs.org/pngjs/-/pngjs-5.0.0.tgz"
   integrity sha512-40QW5YalBNfQo5yRYmiw7Yz6TKKVr3h6970B2YE+3fQpsWcrbj1PzJgxeJ19DRQjhMbKPIuMY8rFaXc8moolVw==
 
-pocketbase@^0.12.1:
-  version "0.12.1"
-  resolved "https://registry.npmjs.org/pocketbase/-/pocketbase-0.12.1.tgz"
-  integrity sha512-kihThVla/JontCGA2zVGuxk1vWtz/yt7FqnL241oxd+w7RBVNzLIRKN6GolnY9DGOekNmFRb57CL24sbUm4wJA==
+pocketbase@^0.13.1:
+  version "0.13.1"
+  resolved "https://registry.yarnpkg.com/pocketbase/-/pocketbase-0.13.1.tgz#b6297148999f67d9b4b5eb86ebb5013ef9c55640"
+  integrity sha512-3Wsj87VcmvqmziWXdXWKyCDKbA3rfMR5wlP64UJj+7KBss4ZEXv3Z1ZXhLe5OOiFwF+ErbcO9bzWBMrVLfsIpQ==
 
 postcss-import@^14.1.0:
   version "14.1.0"
